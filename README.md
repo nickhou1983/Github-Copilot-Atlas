@@ -350,7 +350,7 @@ Add an entry to the README's Specialized Subagents section describing when to us
     "github.copilot.chat.responsesApiReasoningEffort": "high"
   }
   ```
-  - `customAgentInSubagent.enabled`: Allow subagents to use custom agents defined in a '-agents.md' files like the ones above 
+  - `customAgentInSubagent.enabled`: Allow subagents to use custom agents defined in a '-agents.md' file like the ones above 
   - `responsesApiReasoningEffort`: Set to "high" for enhanced reasoning in planning agents (GPT models)
 
 ## Best Practices
