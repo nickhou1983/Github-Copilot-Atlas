@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-section.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #FF6B35; }
+.main { margin: 24pt 28pt; flex: 1; }
+.flow { display: flex; gap: 8pt; margin-top: 8pt; align-items: stretch; }
+.phase { flex: 1; border-radius: 8pt; padding: 10pt; position: relative; }
+.phase img { width: 28pt; height: 28pt; }
+.arrow-col { display: flex; align-items: center; width: 20pt; }
+.arrow-col img { width: 20pt; height: 12pt; }
+.detail-row { display: flex; gap: 10pt; margin-top: 10pt; }
+.detail-box { flex: 1; background: rgba(255,255,255,0.03); border: 1pt solid rgba(255,255,255,0.08); border-radius: 6pt; padding: 8pt; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #FF6B35; font-size: 9pt; margin: 0;">05 / CORE WORKFLOW</p>
+  <h1 style="color: #FFFFFF; font-size: 20pt; margin: 4pt 0 6pt 0;">核心工作流程</h1>
+  <p style="color: #8B95B0; font-size: 9pt; margin: 0 0 4pt 0;">完整生命周期：Planning → Implementation → Review → Commit</p>
+  <div class="flow">
+    <div class="phase" style="background: rgba(74,123,247,0.15); border: 1pt solid rgba(74,123,247,0.4);">
+      <img src="phase-1.png">
+      <p style="color: #4A7BF7; font-size: 11pt; margin: 3pt 0 2pt 0; font-weight: bold;">Phase 1</p>
+      <p style="color: #FFFFFF; font-size: 9pt; margin: 0; font-weight: bold;">规划</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0; padding-left: 10pt;">
+        <li>分析需求</li>
+        <li>委派 Explorer 探索</li>
+        <li>委派 Oracle 研究</li>
+        <li>撰写 3-10 阶段计划</li>
+        <li>等待用户审批</li>
+      </ul>
+    </div>
+    <div class="arrow-col"><img src="arrow-right.png"></div>
+    <div class="phase" style="background: rgba(0,212,170,0.15); border: 1pt solid rgba(0,212,170,0.4);">
+      <img src="phase-2.png">
+      <p style="color: #00D4AA; font-size: 11pt; margin: 3pt 0 2pt 0; font-weight: bold;">Phase 2</p>
+      <p style="color: #FFFFFF; font-size: 9pt; margin: 0; font-weight: bold;">实现循环</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0; padding-left: 10pt;">
+        <li>2A: 委派实现</li>
+        <li>2B: 委派审查</li>
+        <li>2C: 返回用户提交</li>
+        <li>循环每个阶段</li>
+        <li>REVISION 则回退</li>
+      </ul>
+    </div>
+    <div class="arrow-col"><img src="arrow-right.png"></div>
+    <div class="phase" style="background: rgba(255,107,53,0.15); border: 1pt solid rgba(255,107,53,0.4);">
+      <img src="phase-3.png">
+      <p style="color: #FF6B35; font-size: 11pt; margin: 3pt 0 2pt 0; font-weight: bold;">Phase 3</p>
+      <p style="color: #FFFFFF; font-size: 9pt; margin: 0; font-weight: bold;">完成</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0; padding-left: 10pt;">
+        <li>编写完成报告</li>
+        <li>汇总所有文件变更</li>
+        <li>确认测试全部通过</li>
+        <li>呈现最终摘要</li>
+        <li>关闭任务</li>
+      </ul>
+    </div>
+  </div>
+  <div class="detail-row">
+    <div class="detail-box">
+      <p style="color: #FFD93D; font-size: 8pt; margin: 0; font-weight: bold;">3 个强制停止点</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 3pt 0 0 0;">计划审批 → 每阶段提交确认 → 最终完成确认</p>
+    </div>
+    <div class="detail-box">
+      <p style="color: #FFD93D; font-size: 8pt; margin: 0; font-weight: bold;">TDD 驱动每阶段</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 3pt 0 0 0;">RED (写测试失败) → GREEN (最少代码) → REFACTOR (优化)</p>
+    </div>
+    <div class="detail-box">
+      <p style="color: #FFD93D; font-size: 8pt; margin: 0; font-weight: bold;">文件输出规范</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 3pt 0 0 0;">*-plan.md → *-phase-N-complete.md → *-complete.md</p>
+    </div>
+  </div>
+</div>
+</body></html>

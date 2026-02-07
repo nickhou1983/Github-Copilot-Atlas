@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-content.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #4A7BF7; }
+.main { margin: 24pt 28pt; flex: 1; }
+.cols { display: flex; gap: 14pt; margin-top: 8pt; }
+.col { flex: 1; }
+.step { background: rgba(255,255,255,0.04); border: 1pt solid rgba(255,255,255,0.08); border-radius: 6pt; padding: 7pt 10pt; margin-bottom: 5pt; display: flex; align-items: flex-start; gap: 8pt; }
+.step img { width: 20pt; height: 20pt; margin-top: 2pt; }
+.step-text { flex: 1; }
+.bot-row { display: flex; gap: 10pt; margin-top: 6pt; }
+.bot-box { flex: 1; border-radius: 6pt; padding: 8pt 10pt; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #4A7BF7; font-size: 9pt; margin: 0;">07 / ATLAS EXECUTION</p>
+  <h1 style="color: #FFFFFF; font-size: 20pt; margin: 4pt 0 6pt 0;">Atlas 编排执行流程</h1>
+  <p style="color: #8B95B0; font-size: 9pt; margin: 0 0 6pt 0;">Claude Sonnet 4.5 驱动 | 48+ 工具 | 按阶段循环: 实现 → 审查 → 提交</p>
+  <div class="cols">
+    <div class="col">
+      <p style="color: #4A7BF7; font-size: 9pt; margin: 0 0 4pt 0; font-weight: bold;">实现阶段 (Phase 2A)</p>
+      <div class="step">
+        <img src="icon-atlas.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">1. 解析当前阶段</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">从 plan.md 提取阶段目标和文件列表</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="icon-sisyphus.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">2. 委派 Sisyphus</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">TDD 循环: RED → GREEN → REFACTOR</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="icon-frontend.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">3. 或委派 Frontend</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">如含 UI 任务，走前端专职流程</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <p style="color: #00D4AA; font-size: 9pt; margin: 0 0 4pt 0; font-weight: bold;">审查阶段 (Phase 2B)</p>
+      <div class="step">
+        <img src="icon-review.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">4. 委派 Code-Review</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">逐文件 diff 审查 + 严格评审标准</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="check.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">5. 评审结果判断</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">APPROVED → 进入提交 / REVISION → 返回步骤2</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="phase-4.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">6. 用户提交确认</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">强制停止点: 用户决定 commit 或修改</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bot-row">
+    <div class="bot-box" style="background: rgba(74,123,247,0.1); border: 1pt solid rgba(74,123,247,0.3);">
+      <p style="color: #4A7BF7; font-size: 8pt; margin: 0; font-weight: bold;">APPROVED 路径</p>
+      <p style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0 0 0;">写入 phase-N-complete.md → 推进到下一阶段 → 循环直到全部完成</p>
+    </div>
+    <div class="bot-box" style="background: rgba(255,107,53,0.1); border: 1pt solid rgba(255,107,53,0.3);">
+      <p style="color: #FF6B35; font-size: 8pt; margin: 0; font-weight: bold;">REVISION 路径</p>
+      <p style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0 0 0;">附带审查反馈 → 返回 Sisyphus 修改 → 重新审查 → 直到通过</p>
+    </div>
+    <div class="bot-box" style="background: rgba(0,212,170,0.1); border: 1pt solid rgba(0,212,170,0.3);">
+      <p style="color: #00D4AA; font-size: 8pt; margin: 0; font-weight: bold;">产出文件</p>
+      <p style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0 0 0;">*-phase-N-complete.md 记录变更文件、测试结果和阶段摘要</p>
+    </div>
+  </div>
+</div>
+</body></html>

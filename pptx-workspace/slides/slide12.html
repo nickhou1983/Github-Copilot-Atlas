@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-section.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #F472B6; }
+.main { margin: 24pt 28pt; flex: 1; }
+.grid { display: flex; flex-wrap: wrap; gap: 10pt; margin-top: 8pt; }
+.principle { width: calc(33.33% - 8pt); border-radius: 8pt; padding: 10pt; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #F472B6; font-size: 9pt; margin: 0;">11 / DESIGN PRINCIPLES</p>
+  <h1 style="color: #FFFFFF; font-size: 20pt; margin: 4pt 0 6pt 0;">六大设计原则</h1>
+  <p style="color: #8B95B0; font-size: 9pt; margin: 0 0 4pt 0;">构建可靠、可扩展、高效的 AI 多 Agent 协作系统</p>
+  <div class="grid">
+    <div class="principle" style="background: rgba(74,123,247,0.12); border: 1pt solid rgba(74,123,247,0.3);">
+      <p style="color: #4A7BF7; font-size: 10pt; margin: 0; font-weight: bold;">1. 单一职责</p>
+      <p style="color: #FFFFFF; font-size: 8pt; margin: 4pt 0 2pt 0; font-weight: bold;">Single Responsibility</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0; padding-left: 10pt;">
+        <li>每个 Agent 专注一件事</li>
+        <li>Explorer 只探索不实现</li>
+        <li>Sisyphus 只实现不审查</li>
+        <li>职责零重叠</li>
+      </ul>
+    </div>
+    <div class="principle" style="background: rgba(0,212,170,0.12); border: 1pt solid rgba(0,212,170,0.3);">
+      <p style="color: #00D4AA; font-size: 10pt; margin: 0; font-weight: bold;">2. 最小权限</p>
+      <p style="color: #FFFFFF; font-size: 8pt; margin: 4pt 0 2pt 0; font-weight: bold;">Least Privilege</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0; padding-left: 10pt;">
+        <li>工具按需分配</li>
+        <li>Explorer 没有写权限</li>
+        <li>Code-Review 无编辑能力</li>
+        <li>防止越权操作</li>
+      </ul>
+    </div>
+    <div class="principle" style="background: rgba(255,107,53,0.12); border: 1pt solid rgba(255,107,53,0.3);">
+      <p style="color: #FF6B35; font-size: 10pt; margin: 0; font-weight: bold;">3. TDD 驱动</p>
+      <p style="color: #FFFFFF; font-size: 8pt; margin: 4pt 0 2pt 0; font-weight: bold;">Test-Driven Development</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0; padding-left: 10pt;">
+        <li>RED: 先写失败测试</li>
+        <li>GREEN: 最少代码通过</li>
+        <li>REFACTOR: 清理优化</li>
+        <li>强制每阶段执行</li>
+      </ul>
+    </div>
+    <div class="principle" style="background: rgba(192,132,252,0.12); border: 1pt solid rgba(192,132,252,0.3);">
+      <p style="color: #C084FC; font-size: 10pt; margin: 0; font-weight: bold;">4. 人在环中</p>
+      <p style="color: #FFFFFF; font-size: 8pt; margin: 4pt 0 2pt 0; font-weight: bold;">Human-in-the-Loop</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0; padding-left: 10pt;">
+        <li>计划必须用户审批</li>
+        <li>每阶段需确认提交</li>
+        <li>最终完成需用户确认</li>
+        <li>3 个强制停止点</li>
+      </ul>
+    </div>
+    <div class="principle" style="background: rgba(255,217,61,0.12); border: 1pt solid rgba(255,217,61,0.3);">
+      <p style="color: #FFD93D; font-size: 10pt; margin: 0; font-weight: bold;">5. 上下文保护</p>
+      <p style="color: #FFFFFF; font-size: 8pt; margin: 4pt 0 2pt 0; font-weight: bold;">Context Conservation</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0; padding-left: 10pt;">
+        <li>委派重型操作</li>
+        <li>返回精简摘要</li>
+        <li>主 Agent 保持轻量</li>
+        <li>节省 70-80% 窗口</li>
+      </ul>
+    </div>
+    <div class="principle" style="background: rgba(244,114,182,0.12); border: 1pt solid rgba(244,114,182,0.3);">
+      <p style="color: #F472B6; font-size: 10pt; margin: 0; font-weight: bold;">6. 可扩展性</p>
+      <p style="color: #FFFFFF; font-size: 8pt; margin: 4pt 0 2pt 0; font-weight: bold;">Extensibility</p>
+      <ul style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0; padding-left: 10pt;">
+        <li>标准 .agent.md 格式</li>
+        <li>轻松添加新 Agent</li>
+        <li>自定义工具和模型</li>
+        <li>插件化架构</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body></html>

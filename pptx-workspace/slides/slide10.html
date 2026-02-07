@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-content.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #FFD93D; }
+.main { margin: 24pt 28pt; flex: 1; }
+.cols { display: flex; gap: 14pt; margin-top: 8pt; }
+.col { flex: 1; }
+.card { background: rgba(255,255,255,0.04); border: 1pt solid rgba(255,255,255,0.08); border-radius: 6pt; padding: 10pt; margin-bottom: 8pt; }
+.strategy { border-radius: 6pt; padding: 10pt; margin-bottom: 6pt; }
+.bot-bar { display: flex; gap: 10pt; margin-top: 6pt; }
+.bot-item { flex: 1; background: rgba(255,255,255,0.04); border: 1pt solid rgba(255,255,255,0.08); border-radius: 6pt; padding: 8pt; text-align: center; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #FFD93D; font-size: 9pt; margin: 0;">09 / PARALLEL EXECUTION</p>
+  <h1 style="color: #FFFFFF; font-size: 20pt; margin: 4pt 0 6pt 0;">并行执行策略</h1>
+  <p style="color: #8B95B0; font-size: 9pt; margin: 0 0 6pt 0;">多 Agent 同时工作 | 上下文独立 | 10x 效率提升</p>
+  <div class="cols">
+    <div class="col">
+      <div class="strategy" style="background: rgba(74,123,247,0.12); border: 1pt solid rgba(74,123,247,0.3);">
+        <p style="color: #4A7BF7; font-size: 9pt; margin: 0; font-weight: bold;">研究阶段并行</p>
+        <p style="color: #C8CDD8; font-size: 7pt; margin: 4pt 0 0 0;">Prometheus 同时委派:</p>
+        <ul style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0; padding-left: 12pt;">
+          <li>Explorer → 代码库探索</li>
+          <li>Oracle → 外部文档研究</li>
+        </ul>
+        <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">两者独立执行，结果合并用于规划</p>
+      </div>
+      <div class="strategy" style="background: rgba(0,212,170,0.12); border: 1pt solid rgba(0,212,170,0.3);">
+        <p style="color: #00D4AA; font-size: 9pt; margin: 0; font-weight: bold;">实现阶段并行</p>
+        <p style="color: #C8CDD8; font-size: 7pt; margin: 4pt 0 0 0;">Atlas 可同时委派:</p>
+        <ul style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0; padding-left: 12pt;">
+          <li>Sisyphus → 后端实现</li>
+          <li>Frontend-Engineer → 前端 UI</li>
+        </ul>
+        <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">文件不重叠时可完全并行</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="strategy" style="background: rgba(255,107,53,0.12); border: 1pt solid rgba(255,107,53,0.3);">
+        <p style="color: #FF6B35; font-size: 9pt; margin: 0; font-weight: bold;">审查阶段并行</p>
+        <p style="color: #C8CDD8; font-size: 7pt; margin: 4pt 0 0 0;">阶段完成后 Atlas 同时启动:</p>
+        <ul style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0; padding-left: 12pt;">
+          <li>Code-Review → 代码审查</li>
+          <li>Explorer → 回归检查</li>
+        </ul>
+        <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">审查与探索并行加速反馈循环</p>
+      </div>
+      <div class="card">
+        <p style="color: #FFD93D; font-size: 9pt; margin: 0; font-weight: bold;">并行安全条件</p>
+        <ul style="color: #C8CDD8; font-size: 7pt; margin: 4pt 0 0 0; padding-left: 12pt;">
+          <li>各 Agent 操作的文件集不重叠</li>
+          <li>不存在数据依赖关系</li>
+          <li>每个 Agent 有独立上下文窗口</li>
+          <li>Atlas 负责合并和冲突检测</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bot-bar">
+    <div class="bot-item">
+      <p style="color: #4A7BF7; font-size: 10pt; margin: 0; font-weight: bold;">2x</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">研究并行加速</p>
+    </div>
+    <div class="bot-item">
+      <p style="color: #00D4AA; font-size: 10pt; margin: 0; font-weight: bold;">3-5x</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">多文件实现加速</p>
+    </div>
+    <div class="bot-item">
+      <p style="color: #FF6B35; font-size: 10pt; margin: 0; font-weight: bold;">2x</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">审查周期缩短</p>
+    </div>
+    <div class="bot-item">
+      <p style="color: #FFD93D; font-size: 10pt; margin: 0; font-weight: bold;">10x</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">整体效率提升</p>
+    </div>
+  </div>
+</div>
+</body></html>

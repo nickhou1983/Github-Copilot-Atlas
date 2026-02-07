@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-content.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #4A7BF7; }
+.main { margin: 30pt 35pt; flex: 1; }
+.header { margin-bottom: 16pt; }
+.cols { display: flex; gap: 20pt; }
+.col-left { flex: 1; }
+.col-right { flex: 1; }
+.card { background: rgba(255,255,255,0.05); border: 1pt solid rgba(74,123,247,0.3); border-radius: 8pt; padding: 14pt; margin-bottom: 10pt; }
+.card-head { display: flex; align-items: center; gap: 8pt; margin-bottom: 6pt; }
+.card-head img { width: 24pt; height: 24pt; }
+.metric { display: flex; gap: 14pt; margin-top: 10pt; }
+.metric-item { flex: 1; background: rgba(0,212,170,0.08); border: 1pt solid rgba(0,212,170,0.25); border-radius: 6pt; padding: 10pt; text-align: center; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <div class="header">
+    <p style="color: #4A7BF7; font-size: 9pt; margin: 0;">01 / PROJECT OVERVIEW</p>
+    <h1 style="color: #FFFFFF; font-size: 24pt; margin: 6pt 0 4pt 0;">项目概述</h1>
+    <p style="color: #8B95B0; font-size: 10pt; margin: 0;">基于 Conductor-Delegate 模式的智能开发编排系统</p>
+  </div>
+  <div class="cols">
+    <div class="col-left">
+      <div class="card">
+        <div class="card-head"><img src="check.png"><p style="color: #00D4AA; font-size: 11pt; margin: 0; font-weight: bold;">核心理念</p></div>
+        <p style="color: #C8CDD8; font-size: 9pt; margin: 2pt 0;">将复杂开发任务分解为 Planning → Implementation → Review → Commit 的完整生命周期</p>
+      </div>
+      <div class="card">
+        <div class="card-head"><img src="check.png"><p style="color: #00D4AA; font-size: 11pt; margin: 0; font-weight: bold;">7 个专职 Agent</p></div>
+        <p style="color: #C8CDD8; font-size: 9pt; margin: 2pt 0;">各司其职：规划、研究、探索、实现、审查、前端专家，由指挥官统一编排</p>
+      </div>
+      <div class="card">
+        <div class="card-head"><img src="check.png"><p style="color: #00D4AA; font-size: 11pt; margin: 0; font-weight: bold;">TDD 驱动</p></div>
+        <p style="color: #C8CDD8; font-size: 9pt; margin: 2pt 0;">每个阶段严格遵循 Red-Green-Refactor 测试驱动开发循环</p>
+      </div>
+    </div>
+    <div class="col-right">
+      <p style="color: #FFD93D; font-size: 10pt; margin: 0 0 8pt 0; font-weight: bold;">核心价值对比</p>
+      <div class="metric">
+        <div class="metric-item">
+          <p style="color: #00D4AA; font-size: 20pt; margin: 0; font-weight: bold;">70-80%</p>
+          <p style="color: #8B95B0; font-size: 8pt; margin: 4pt 0 0 0;">上下文节省</p>
+        </div>
+        <div class="metric-item">
+          <p style="color: #00D4AA; font-size: 20pt; margin: 0; font-weight: bold;">10x</p>
+          <p style="color: #8B95B0; font-size: 8pt; margin: 4pt 0 0 0;">并行执行</p>
+        </div>
+      </div>
+      <div class="metric" style="margin-top: 8pt;">
+        <div class="metric-item">
+          <p style="color: #4A7BF7; font-size: 20pt; margin: 0; font-weight: bold;">100%</p>
+          <p style="color: #8B95B0; font-size: 8pt; margin: 4pt 0 0 0;">TDD 覆盖</p>
+        </div>
+        <div class="metric-item">
+          <p style="color: #4A7BF7; font-size: 20pt; margin: 0; font-weight: bold;">可扩展</p>
+          <p style="color: #8B95B0; font-size: 8pt; margin: 4pt 0 0 0;">自定义 Agent</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

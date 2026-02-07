@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-content.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #00D4AA; }
+.main { margin: 24pt 28pt; flex: 1; }
+.table { margin-top: 8pt; border-radius: 6pt; overflow: hidden; border: 1pt solid rgba(255,255,255,0.08); }
+.row { display: flex; }
+.cell { padding: 6pt 10pt; border-bottom: 1pt solid rgba(255,255,255,0.06); border-right: 1pt solid rgba(255,255,255,0.06); }
+.hdr { background: rgba(0,212,170,0.15); }
+.r0 { background: rgba(255,255,255,0.03); }
+.r1 { background: rgba(255,255,255,0.06); }
+.c0 { width: 80pt; }
+.c1 { width: 100pt; }
+.c2 { flex: 1; }
+.c3 { width: 90pt; }
+.note-row { display: flex; gap: 10pt; margin-top: 10pt; }
+.note-card { flex: 1; background: rgba(255,255,255,0.04); border: 1pt solid rgba(255,255,255,0.08); border-radius: 6pt; padding: 8pt 10pt; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #00D4AA; font-size: 9pt; margin: 0;">08 / DELEGATION</p>
+  <h1 style="color: #FFFFFF; font-size: 20pt; margin: 4pt 0 6pt 0;">委派关系与权限矩阵</h1>
+  <p style="color: #8B95B0; font-size: 9pt; margin: 0 0 4pt 0;">谁可以委派谁 | 各 Agent 权限范围 | 单向委派原则</p>
+  <div class="table">
+    <div class="row">
+      <div class="cell hdr c0"><p style="color: #00D4AA; font-size: 7pt; margin: 0; font-weight: bold;">委派方</p></div>
+      <div class="cell hdr c1"><p style="color: #00D4AA; font-size: 7pt; margin: 0; font-weight: bold;">可委派目标</p></div>
+      <div class="cell hdr c2"><p style="color: #00D4AA; font-size: 7pt; margin: 0; font-weight: bold;">权限说明</p></div>
+      <div class="cell hdr c3"><p style="color: #00D4AA; font-size: 7pt; margin: 0; font-weight: bold;">文件编辑</p></div>
+    </div>
+    <div class="row">
+      <div class="cell r0 c0"><p style="color: #4A7BF7; font-size: 7pt; margin: 0; font-weight: bold;">Atlas</p></div>
+      <div class="cell r0 c1"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">全部 6 个子 Agent</p></div>
+      <div class="cell r0 c2"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">48+ 工具 | 完整文件系统 | 终端 | Git 操作</p></div>
+      <div class="cell r0 c3"><p style="color: #34D399; font-size: 7pt; margin: 0; font-weight: bold;">完全读写</p></div>
+    </div>
+    <div class="row">
+      <div class="cell r1 c0"><p style="color: #C084FC; font-size: 7pt; margin: 0; font-weight: bold;">Prometheus</p></div>
+      <div class="cell r1 c1"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">Explorer, Oracle</p></div>
+      <div class="cell r1 c2"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">只读搜索 + 规划输出 | 不可编辑源码</p></div>
+      <div class="cell r1 c3"><p style="color: #FFD93D; font-size: 7pt; margin: 0; font-weight: bold;">仅写 plan.md</p></div>
+    </div>
+    <div class="row">
+      <div class="cell r0 c0"><p style="color: #FF6B35; font-size: 7pt; margin: 0; font-weight: bold;">Sisyphus</p></div>
+      <div class="cell r0 c1"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">无 (叶子节点)</p></div>
+      <div class="cell r0 c2"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">文件读写 + 终端 + 测试 | TDD 强制</p></div>
+      <div class="cell r0 c3"><p style="color: #34D399; font-size: 7pt; margin: 0; font-weight: bold;">完全读写</p></div>
+    </div>
+    <div class="row">
+      <div class="cell r1 c0"><p style="color: #F472B6; font-size: 7pt; margin: 0; font-weight: bold;">Code-Review</p></div>
+      <div class="cell r1 c1"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">无 (叶子节点)</p></div>
+      <div class="cell r1 c2"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">只读代码 + diff 审查 | 输出 APPROVED/REVISION</p></div>
+      <div class="cell r1 c3"><p style="color: #FF6B35; font-size: 7pt; margin: 0; font-weight: bold;">只读</p></div>
+    </div>
+    <div class="row">
+      <div class="cell r0 c0"><p style="color: #00D4AA; font-size: 7pt; margin: 0; font-weight: bold;">Explorer</p></div>
+      <div class="cell r0 c1"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">无 (叶子节点)</p></div>
+      <div class="cell r0 c2"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">file_search + grep_search + read_file</p></div>
+      <div class="cell r0 c3"><p style="color: #FF6B35; font-size: 7pt; margin: 0; font-weight: bold;">只读</p></div>
+    </div>
+    <div class="row">
+      <div class="cell r1 c0"><p style="color: #FFD93D; font-size: 7pt; margin: 0; font-weight: bold;">Oracle</p></div>
+      <div class="cell r1 c1"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">无 (叶子节点)</p></div>
+      <div class="cell r1 c2"><p style="color: #C8CDD8; font-size: 7pt; margin: 0;">fetch_webpage + semantic_search + 文档查询</p></div>
+      <div class="cell r1 c3"><p style="color: #FF6B35; font-size: 7pt; margin: 0; font-weight: bold;">只读</p></div>
+    </div>
+  </div>
+  <div class="note-row">
+    <div class="note-card">
+      <p style="color: #00D4AA; font-size: 8pt; margin: 0; font-weight: bold;">单向委派原则</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 3pt 0 0 0;">子 Agent 不可反向委派父级，保证控制流清晰</p>
+    </div>
+    <div class="note-card">
+      <p style="color: #00D4AA; font-size: 8pt; margin: 0; font-weight: bold;">最小权限原则</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 3pt 0 0 0;">每个 Agent 仅获得完成任务所需的最少工具和权限</p>
+    </div>
+    <div class="note-card">
+      <p style="color: #00D4AA; font-size: 8pt; margin: 0; font-weight: bold;">结果必回传</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 3pt 0 0 0;">所有子 Agent 完成后必须将结果返回给委派方</p>
+    </div>
+  </div>
+</div>
+</body></html>

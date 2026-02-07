@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-content.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #00D4AA; }
+.main { margin: 28pt 30pt; flex: 1; }
+.row { display: flex; gap: 12pt; margin-top: 10pt; }
+.agent-card { flex: 1; background: rgba(255,255,255,0.04); border: 1pt solid rgba(74,123,247,0.2); border-radius: 8pt; padding: 10pt; text-align: center; }
+.agent-card img { width: 32pt; height: 32pt; }
+.primary-row { display: flex; gap: 16pt; margin-top: 8pt; justify-content: center; }
+.primary-card { width: 260pt; background: rgba(74,123,247,0.1); border: 1pt solid rgba(74,123,247,0.4); border-radius: 10pt; padding: 12pt; text-align: center; }
+.primary-card img { width: 40pt; height: 40pt; }
+.arrow-area { display: flex; justify-content: center; margin: 6pt 0; }
+.arrow-area img { width: 30pt; height: 22pt; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #00D4AA; font-size: 9pt; margin: 0;">02 / ARCHITECTURE</p>
+  <h1 style="color: #FFFFFF; font-size: 22pt; margin: 6pt 0 2pt 0;">系统架构总览</h1>
+  <p style="color: #8B95B0; font-size: 9pt; margin: 0 0 6pt 0;">指挥官-委派模式 (Conductor-Delegate Pattern)</p>
+  <div class="primary-row">
+    <div class="primary-card">
+      <img src="icon-prometheus.png">
+      <p style="color: #FF6B35; font-size: 12pt; margin: 4pt 0 2pt 0; font-weight: bold;">Prometheus</p>
+      <p style="color: #8B95B0; font-size: 8pt; margin: 0;">自主规划师 | GPT-5.2 High</p>
+      <p style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0;">研究需求 → 撰写计划 → 交接</p>
+    </div>
+    <div class="primary-card">
+      <img src="icon-atlas.png">
+      <p style="color: #4A7BF7; font-size: 12pt; margin: 4pt 0 2pt 0; font-weight: bold;">Atlas</p>
+      <p style="color: #8B95B0; font-size: 8pt; margin: 0;">指挥官 | Claude Sonnet 4.5</p>
+      <p style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0;">编排完整开发生命周期</p>
+    </div>
+  </div>
+  <div class="arrow-area"><img src="arrow-down.png"></div>
+  <div class="row">
+    <div class="agent-card">
+      <img src="icon-explorer.png">
+      <p style="color: #FFD93D; font-size: 9pt; margin: 3pt 0 1pt 0; font-weight: bold;">Explorer</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 0;">侦察兵</p>
+      <p style="color: #5A6580; font-size: 6pt; margin: 1pt 0 0 0;">Gemini 3 Flash</p>
+    </div>
+    <div class="agent-card">
+      <img src="icon-oracle.png">
+      <p style="color: #00D4AA; font-size: 9pt; margin: 3pt 0 1pt 0; font-weight: bold;">Oracle</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 0;">研究员</p>
+      <p style="color: #5A6580; font-size: 6pt; margin: 1pt 0 0 0;">GPT-5.2</p>
+    </div>
+    <div class="agent-card">
+      <img src="icon-sisyphus.png">
+      <p style="color: #C084FC; font-size: 9pt; margin: 3pt 0 1pt 0; font-weight: bold;">Sisyphus</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 0;">实现者</p>
+      <p style="color: #5A6580; font-size: 6pt; margin: 1pt 0 0 0;">Claude Sonnet 4.5</p>
+    </div>
+    <div class="agent-card">
+      <img src="icon-review.png">
+      <p style="color: #F472B6; font-size: 9pt; margin: 3pt 0 1pt 0; font-weight: bold;">Code-Review</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 0;">审查员</p>
+      <p style="color: #5A6580; font-size: 6pt; margin: 1pt 0 0 0;">GPT-5.2</p>
+    </div>
+    <div class="agent-card">
+      <img src="icon-frontend.png">
+      <p style="color: #34D399; font-size: 9pt; margin: 3pt 0 1pt 0; font-weight: bold;">Frontend</p>
+      <p style="color: #8B95B0; font-size: 7pt; margin: 0;">前端专家</p>
+      <p style="color: #5A6580; font-size: 6pt; margin: 1pt 0 0 0;">Gemini 3 Pro</p>
+    </div>
+  </div>
+</div>
+</body></html>

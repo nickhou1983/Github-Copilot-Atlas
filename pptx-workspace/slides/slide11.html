@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-content.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #34D399; }
+.main { margin: 24pt 28pt; flex: 1; }
+.cols { display: flex; gap: 14pt; margin-top: 8pt; }
+.col { flex: 1; }
+.card { border-radius: 6pt; padding: 10pt; margin-bottom: 8pt; }
+.compare { display: flex; gap: 10pt; margin-top: 8pt; }
+.compare-box { flex: 1; border-radius: 6pt; padding: 10pt; text-align: center; }
+.bar-row { display: flex; align-items: center; gap: 6pt; margin-top: 4pt; }
+.bar-bg { flex: 1; height: 10pt; background: rgba(255,255,255,0.06); border-radius: 5pt; overflow: hidden; }
+.bar-fill { height: 10pt; border-radius: 5pt; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #34D399; font-size: 9pt; margin: 0;">10 / CONTEXT CONSERVATION</p>
+  <h1 style="color: #FFFFFF; font-size: 20pt; margin: 4pt 0 6pt 0;">上下文保护策略</h1>
+  <p style="color: #8B95B0; font-size: 9pt; margin: 0 0 4pt 0;">子 Agent 分担认知负载 | 主 Agent 保留决策上下文 | 节省 70-80% 上下文窗口</p>
+  <div class="cols">
+    <div class="col">
+      <div class="card" style="background: rgba(52,211,153,0.12); border: 1pt solid rgba(52,211,153,0.3);">
+        <p style="color: #34D399; font-size: 10pt; margin: 0; font-weight: bold;">核心思想</p>
+        <ul style="color: #C8CDD8; font-size: 7.5pt; margin: 4pt 0 0 0; padding-left: 12pt;">
+          <li>Atlas 只保留高层决策上下文</li>
+          <li>重型操作委派给专职子 Agent</li>
+          <li>Explorer 消化大量代码探索结果</li>
+          <li>Oracle 消化外部文档和研究</li>
+          <li>Sisyphus 消化实现细节和测试</li>
+          <li>子 Agent 返回精简摘要</li>
+        </ul>
+      </div>
+      <div class="card" style="background: rgba(255,255,255,0.04); border: 1pt solid rgba(255,255,255,0.08);">
+        <p style="color: #FFD93D; font-size: 10pt; margin: 0; font-weight: bold;">精简摘要模式</p>
+        <ul style="color: #C8CDD8; font-size: 7.5pt; margin: 4pt 0 0 0; padding-left: 12pt;">
+          <li>Explorer: 返回文件列表 + 关键发现</li>
+          <li>Oracle: 返回技术方案 + 关键参考</li>
+          <li>Code-Review: 返回 APPROVED/REVISION</li>
+          <li>避免传递原始代码到父 Agent</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <p style="color: #34D399; font-size: 9pt; margin: 0 0 6pt 0; font-weight: bold;">上下文占用对比</p>
+      <p style="color: #C8CDD8; font-size: 7pt; margin: 0;">无委派 (单 Agent 模式)</p>
+      <div class="bar-row">
+        <div class="bar-bg"><div class="bar-fill" style="width: 100%; background: #FF6B35;"></div></div>
+        <p style="color: #FF6B35; font-size: 8pt; margin: 0; font-weight: bold;">100%</p>
+      </div>
+      <p style="color: #C8CDD8; font-size: 7pt; margin: 6pt 0 0 0;">有委派 (多 Agent 模式)</p>
+      <div class="bar-row">
+        <div class="bar-bg"><div class="bar-fill" style="width: 25%; background: #34D399;"></div></div>
+        <p style="color: #34D399; font-size: 8pt; margin: 0; font-weight: bold;">20-30%</p>
+      </div>
+      <div class="compare" style="margin-top: 14pt;">
+        <div class="compare-box" style="background: rgba(255,107,53,0.12); border: 1pt solid rgba(255,107,53,0.3);">
+          <p style="color: #FF6B35; font-size: 18pt; margin: 0; font-weight: bold;">100%</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 3pt 0 0 0;">单 Agent 上下文占用</p>
+          <p style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0;">所有探索+实现+审查</p>
+          <p style="color: #C8CDD8; font-size: 7pt; margin: 1pt 0 0 0;">全部塞入一个窗口</p>
+        </div>
+        <div class="compare-box" style="background: rgba(52,211,153,0.12); border: 1pt solid rgba(52,211,153,0.3);">
+          <p style="color: #34D399; font-size: 18pt; margin: 0; font-weight: bold;">20%</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 3pt 0 0 0;">多 Agent 上下文占用</p>
+          <p style="color: #C8CDD8; font-size: 7pt; margin: 2pt 0 0 0;">只保留决策和摘要</p>
+          <p style="color: #C8CDD8; font-size: 7pt; margin: 1pt 0 0 0;">节省 70-80% 空间</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-content.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #4A7BF7; }
+.main { margin: 26pt 30pt; flex: 1; }
+.cols { display: flex; gap: 16pt; margin-top: 8pt; }
+.col { flex: 1; }
+.agent-box { background: rgba(255,255,255,0.04); border-radius: 10pt; padding: 14pt; margin-bottom: 10pt; position: relative; }
+.agent-box-atlas { border-left: 4pt solid #4A7BF7; }
+.agent-box-prom { border-left: 4pt solid #FF6B35; }
+.hdr { display: flex; align-items: center; gap: 8pt; margin-bottom: 6pt; }
+.hdr img { width: 30pt; height: 30pt; }
+.badge { display: inline-block; background: rgba(74,123,247,0.2); border-radius: 4pt; padding: 2pt 6pt; margin-top: 4pt; }
+.badge-o { background: rgba(255,107,53,0.2); }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #4A7BF7; font-size: 9pt; margin: 0;">03 / PRIMARY AGENTS</p>
+  <h1 style="color: #FFFFFF; font-size: 22pt; margin: 6pt 0 4pt 0;">主 Agent 详解</h1>
+  <div class="cols">
+    <div class="col">
+      <div class="agent-box agent-box-atlas">
+        <div class="hdr"><img src="icon-atlas.png"><p style="color: #4A7BF7; font-size: 14pt; margin: 0; font-weight: bold;">Atlas 指挥官</p></div>
+        <p style="color: #8B95B0; font-size: 8pt; margin: 0;"><b>Model:</b> Claude Sonnet 4.5</p>
+        <div class="badge"><p style="color: #4A7BF7; font-size: 7pt; margin: 0;">48 个工具</p></div>
+        <p style="color: #C8CDD8; font-size: 8pt; margin: 6pt 0 0 0;">核心职责：</p>
+        <ul style="color: #C8CDD8; font-size: 8pt; margin: 4pt 0; padding-left: 14pt;">
+          <li>编排完整开发生命周期</li>
+          <li>委派子 Agent 执行专项任务</li>
+          <li>管理用户审批关卡</li>
+          <li>编写阶段完成文档</li>
+        </ul>
+        <p style="color: #FF6B35; font-size: 7pt; margin: 4pt 0 0 0; font-weight: bold;">关键原则：不亲自编写代码</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="agent-box agent-box-prom">
+        <div class="hdr"><img src="icon-prometheus.png"><p style="color: #FF6B35; font-size: 14pt; margin: 0; font-weight: bold;">Prometheus 规划师</p></div>
+        <p style="color: #8B95B0; font-size: 8pt; margin: 0;"><b>Model:</b> GPT-5.2 High</p>
+        <div class="badge badge-o"><p style="color: #FF6B35; font-size: 7pt; margin: 0;">自主规划</p></div>
+        <p style="color: #C8CDD8; font-size: 8pt; margin: 6pt 0 0 0;">核心职责：</p>
+        <ul style="color: #C8CDD8; font-size: 8pt; margin: 4pt 0; padding-left: 14pt;">
+          <li>深度研究代码库架构</li>
+          <li>撰写 TDD 驱动实施计划</li>
+          <li>分析风险，提出缓解方案</li>
+          <li>自动交接给 Atlas 执行</li>
+        </ul>
+        <p style="color: #FF6B35; font-size: 7pt; margin: 4pt 0 0 0; font-weight: bold;">约束：只写 .md 计划文件</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><style>
+html { background: #0F1629; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; display: flex; background-image: url('bg-content.png'); background-size: cover; }
+.sidebar { width: 8pt; background: #C084FC; }
+.main { margin: 24pt 28pt; flex: 1; }
+.cols { display: flex; gap: 14pt; margin-top: 8pt; }
+.col { flex: 1; }
+.step { background: rgba(255,255,255,0.04); border: 1pt solid rgba(255,255,255,0.08); border-radius: 6pt; padding: 8pt 10pt; margin-bottom: 6pt; display: flex; align-items: flex-start; gap: 8pt; }
+.step img { width: 22pt; height: 22pt; margin-top: 2pt; }
+.step-text { flex: 1; }
+.divider { height: 1pt; background: rgba(255,255,255,0.06); margin: 6pt 0; }
+.note-box { background: rgba(192,132,252,0.1); border: 1pt solid rgba(192,132,252,0.3); border-radius: 6pt; padding: 8pt 10pt; margin-top: 6pt; }
+</style></head><body>
+<div class="sidebar"></div>
+<div class="main">
+  <p style="color: #C084FC; font-size: 9pt; margin: 0;">06 / PROMETHEUS</p>
+  <h1 style="color: #FFFFFF; font-size: 20pt; margin: 4pt 0 6pt 0;">Prometheus 自主规划流程</h1>
+  <p style="color: #8B95B0; font-size: 9pt; margin: 0 0 6pt 0;">GPT-5.2 High 驱动 | 自动委派 Explorer + Oracle | 生成结构化执行计划</p>
+  <div class="cols">
+    <div class="col">
+      <p style="color: #C084FC; font-size: 9pt; margin: 0 0 4pt 0; font-weight: bold;">触发 &amp; 分析</p>
+      <div class="step">
+        <img src="phase-1.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">Step 1: 接收任务</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">Atlas 委派或用户 @prometheus 触发</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="icon-explorer.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">Step 2: 委派 Explorer</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">file_search + grep 代码库全局探索</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="icon-oracle.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">Step 3: 委派 Oracle</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">fetch_webpage + semantic_search 外部研究</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="note-box">
+        <p style="color: #C084FC; font-size: 8pt; margin: 0; font-weight: bold;">关键约束</p>
+        <ul style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0 0 0; padding-left: 10pt;">
+          <li>禁止直接编辑文件</li>
+          <li>必须 3-10 个阶段</li>
+          <li>每阶段可独立交付</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <p style="color: #C084FC; font-size: 9pt; margin: 0 0 4pt 0; font-weight: bold;">计划生成 &amp; 输出</p>
+      <div class="step">
+        <img src="phase-2.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">Step 4: 综合分析</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">合并 Explorer + Oracle 结果分析影响范围</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="phase-3.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">Step 5: 撰写计划</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">每阶段包含: 描述 / 受影响文件 / 验收标准 / 依赖</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="phase-4.png">
+        <div class="step-text">
+          <p style="color: #FFFFFF; font-size: 8pt; margin: 0; font-weight: bold;">Step 6: 写入 *-plan.md</p>
+          <p style="color: #8B95B0; font-size: 7pt; margin: 2pt 0 0 0;">自动 handoff 回 Atlas 或返回用户审批</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="note-box">
+        <p style="color: #C084FC; font-size: 8pt; margin: 0; font-weight: bold;">输出模板</p>
+        <ul style="color: #C8CDD8; font-size: 7pt; margin: 3pt 0 0 0; padding-left: 10pt;">
+          <li>Phase N: 标题 + 描述</li>
+          <li>Files: 受影响文件列表</li>
+          <li>Acceptance: 验收标准</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>
